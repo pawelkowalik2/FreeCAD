@@ -5,8 +5,8 @@
     <name>ArchMaterial</name>
     <message>
       <location filename="../ui/ArchMaterial.ui" line="14"/>
-      <source>Arch material</source>
-      <translation>Материјал БИМ окружења</translation>
+      <source>BIM material</source>
+      <translation type="unfinished">BIM material</translation>
     </message>
     <message>
       <location filename="../ui/ArchMaterial.ui" line="26"/>
@@ -409,7 +409,7 @@ Leave blank to use all objects from the document</source>
     <message>
       <location filename="../ui/dialogIfcProperties.ui" line="14"/>
       <source>IFC Properties Manager</source>
-      <translation type="unfinished">IFC Properties Manager</translation>
+      <translation>Менаџер IFC својстава</translation>
     </message>
     <message>
       <location filename="../ui/dialogIfcProperties.ui" line="20"/>
@@ -470,7 +470,7 @@ Leave blank to use all objects from the document</source>
     <message>
       <location filename="../ui/dialogClassification.ui" line="14"/>
       <source>Classification manager</source>
-      <translation type="unfinished">Classification manager</translation>
+      <translation>Менаџер класификације</translation>
     </message>
     <message>
       <location filename="../ui/dialogClassification.ui" line="42"/>
@@ -1243,7 +1243,7 @@ Utils -&gt; Make IFC project</translation>
     <message>
       <location filename="../ui/dialogSpaces.ui" line="179"/>
       <source>Level</source>
-      <translation type="unfinished">Level</translation>
+      <translation>Спрат</translation>
     </message>
     <message>
       <location filename="../ui/dialogSpaces.ui" line="186"/>
@@ -1717,7 +1717,7 @@ Utils -&gt; Make IFC project</translation>
     <message>
       <location filename="../ui/dialogPreflight.ui" line="20"/>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The following test will check your model or the selected object(s) and their children for conformity to some IFC standards.&lt;/p&gt;&lt;p&gt;&lt;span style=" font-weight:600;"&gt;Important&lt;/span&gt;: None of the failed tests below will prevent exporting IFC files, nor do these tests guarantee that your IFC files meets some specific quality or standard requirement. They are there to help you assess what is and what is not in your exported file. It's for you to choose which item is of importance to you or not. Hovering the mouse over each description will give you more information to decide.&lt;/p&gt;&lt;p&gt;After a test is run, clicking the corresponding button will give you more information to help you to fix problems.&lt;/p&gt;&lt;p&gt;The &lt;a href="http://www.buildingsmart-tech.org/specifications"&gt;&lt;span style=" text-decoration: underline; color:#0000ff;"&gt;official IFC website&lt;/span&gt;&lt;/a&gt; contains a lot of useful information about IFC standards.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The following test will check your model or the selected object(s) and their children for conformity to some IFC standards.&lt;/p&gt;&lt;p&gt;&lt;span style=" font-weight:600;"&gt;Important&lt;/span&gt;: None of the failed tests below will prevent exporting IFC files, nor do these tests guarantee that your IFC files meets some specific quality or standard requirement. They are there to help you assess what is and what is not in your exported file. It's for you to choose which item is of importance to you or not. Hovering the mouse over each description will give you more information to decide.&lt;/p&gt;&lt;p&gt;After a test is run, clicking the corresponding button will give you more information to help you to fix problems.&lt;/p&gt;&lt;p&gt;The &lt;a href="http://www.buildingsmart-tech.org/specifications"&gt;&lt;span style=" text-decoration: underline; color:#0000ff;"&gt;official IFC website&lt;/span&gt;&lt;/a&gt; contains a lot of useful information about IFC standards.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Овај тест служи за проверу да ли су модели, изабрани објекти и њихови подређени објекти у складу са одређеним IFC стандардима.&lt;/p&gt;&lt;p&gt;&lt;span style=" font-weight:600;"&gt;Важно&lt;/span&gt;: Неуспешни тестови нец́е спречити извоз IFC датотека, нити гарантују да тестиране ИФЦ датотеке испуњавају неке специфичне захтеве квалитета или стандарда. Они су ту само да омогуће процену датотеке. На теби је да изабереш која је ставка важна, а која не. Лебдењем миша изнад сваког описа појавиће се више информација.&lt;/p&gt;&lt;p&gt;Након покретања теста, кликом на одговарајуц́е дугме на располагању ће ти бити више информација за решавање проблема..&lt;/p&gt;&lt;p&gt; &lt;a href="http://www.buildingsmart-tech.org/specifications"&gt;&lt;span style=" text-decoration: underline; color:#0000ff;"&gt;Званични IFC веб-сајт&lt;/span&gt;&lt;/a&gt; садржи много корисних информација о IFC стандардима.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <location filename="../ui/dialogPreflight.ui" line="30"/>
@@ -2035,7 +2035,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../ui/dialogViews.ui" line="69"/>
       <source>Level</source>
-      <translation type="unfinished">Level</translation>
+      <translation>Спрат</translation>
     </message>
     <message>
       <location filename="../ui/dialogWindows.ui" line="14"/>
@@ -2526,7 +2526,7 @@ instead of the FreeCAD web workbench</translation>
     <message>
       <location filename="../ui/preferences-arch.ui" line="565"/>
       <source>Survey</source>
-      <translation>Анкета</translation>
+      <translation>Истражи модел</translation>
     </message>
     <message>
       <location filename="../ui/preferences-arch.ui" line="571"/>
@@ -2774,7 +2774,7 @@ if you start getting crashes when you set multiple cores.</source>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="188"/>
       <source>One compound per floor</source>
-      <translation type="unfinished">One compound per floor</translation>
+      <translation>Један састављени објекат по спрату</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="193"/>
@@ -2789,7 +2789,7 @@ if you start getting crashes when you set multiple cores.</source>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="232"/>
       <source>One compound for all</source>
-      <translation type="unfinished">One compound for all</translation>
+      <translation>Један састављени објекат за све</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="237"/>
@@ -2898,13 +2898,13 @@ they will be treated as one.</source>
       <location filename="../ui/preferences-ifc.ui" line="420"/>
       <source>Fit view during import on the imported objects.
 This will slow down the import, but one can watch the import.</source>
-      <translation type="unfinished">Fit view during import on the imported objects.
-This will slow down the import, but one can watch the import.</translation>
+      <translation>Смешта увезене објекте у поглед током увоза.
+Ово ће успорити увоз, али се он може пратити.</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="424"/>
       <source>Fit view while importing</source>
-      <translation type="unfinished">Fit view while importing</translation>
+      <translation>Смештај у поглед током увоза</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="437"/>
@@ -2985,7 +2985,7 @@ If using Netgen, make sure that it is available.</source>
     <message>
       <location filename="../ui/preferences-dae.ui" line="108"/>
       <source>Builtin and Mefisto mesher options</source>
-      <translation type="unfinished">Builtin and Mefisto mesher options</translation>
+      <translation>Опције уграђеног и Мефисто генератора мреже</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dae.ui" line="116"/>
@@ -3344,7 +3344,7 @@ unit to work with when opening the file.</source>
       <location filename="../../ArchStructure.py" line="126"/>
       <location filename="../../ArchStructure.py" line="445"/>
       <source>Beam</source>
-      <translation type="unfinished">Beam</translation>
+      <translation>Греда</translation>
     </message>
     <message>
       <location filename="../../ArchStructure.py" line="129"/>
@@ -3355,7 +3355,7 @@ unit to work with when opening the file.</source>
     <message>
       <location filename="../../ArchStructure.py" line="151"/>
       <source>StructuralSystem</source>
-      <translation type="unfinished">StructuralSystem</translation>
+      <translation>Cтруктурни Cиcтем</translation>
     </message>
     <message>
       <location filename="../../ArchStructure.py" line="206"/>
@@ -3395,7 +3395,7 @@ unit to work with when opening the file.</source>
     </message>
     <message>
       <location filename="../../ArchStructure.py" line="345"/>
-      <location filename="../../bimcommands/BimWall.py" line="156"/>
+      <location filename="../../bimcommands/BimWall.py" line="158"/>
       <source>Next point</source>
       <translation>Следећа тачка</translation>
     </message>
@@ -3406,14 +3406,14 @@ unit to work with when opening the file.</source>
     </message>
     <message>
       <location filename="../../ArchStructure.py" line="456"/>
-      <location filename="../../ArchCommands.py" line="1335"/>
+      <location filename="../../ArchCommands.py" line="1361"/>
       <location filename="../../bimcommands/BimProfile.py" line="74"/>
       <source>Category</source>
       <translation>Категорија</translation>
     </message>
     <message>
       <location filename="../../ArchStructure.py" line="463"/>
-      <location filename="../../bimcommands/BimWindow.py" line="306"/>
+      <location filename="../../bimcommands/BimWindow.py" line="307"/>
       <location filename="../../bimcommands/BimProfile.py" line="81"/>
       <location filename="../../bimcommands/BimPanel.py" line="138"/>
       <source>Preset</source>
@@ -3422,8 +3422,8 @@ unit to work with when opening the file.</source>
     <message>
       <location filename="../../ArchStructure.py" line="472"/>
       <location filename="../../ArchPrecast.py" line="1412"/>
-      <location filename="../../ArchCommands.py" line="1010"/>
-      <location filename="../../bimcommands/BimWall.py" line="293"/>
+      <location filename="../../ArchCommands.py" line="1036"/>
+      <location filename="../../bimcommands/BimWall.py" line="295"/>
       <location filename="../../bimcommands/BimPanel.py" line="148"/>
       <source>Length</source>
       <translation>Дужина</translation>
@@ -3431,7 +3431,7 @@ unit to work with when opening the file.</source>
     <message>
       <location filename="../../ArchStructure.py" line="482"/>
       <location filename="../../ArchPrecast.py" line="1413"/>
-      <location filename="../../bimcommands/BimWall.py" line="299"/>
+      <location filename="../../bimcommands/BimWall.py" line="301"/>
       <location filename="../../bimcommands/BimPanel.py" line="155"/>
       <source>Width</source>
       <translation>Ширина</translation>
@@ -3439,7 +3439,7 @@ unit to work with when opening the file.</source>
     <message>
       <location filename="../../ArchStructure.py" line="489"/>
       <location filename="../../ArchPrecast.py" line="1414"/>
-      <location filename="../../bimcommands/BimWall.py" line="305"/>
+      <location filename="../../bimcommands/BimWall.py" line="307"/>
       <source>Height</source>
       <translation>Висина</translation>
     </message>
@@ -3460,7 +3460,7 @@ unit to work with when opening the file.</source>
     </message>
     <message>
       <location filename="../../ArchStructure.py" line="505"/>
-      <location filename="../../bimcommands/BimWall.py" line="319"/>
+      <location filename="../../bimcommands/BimWall.py" line="321"/>
       <location filename="../../bimcommands/BimPanel.py" line="173"/>
       <source>Con&amp;tinue</source>
       <translation type="unfinished">Con&amp;tinue</translation>
@@ -3472,7 +3472,7 @@ unit to work with when opening the file.</source>
     </message>
     <message>
       <location filename="../../ArchStructure.py" line="809"/>
-      <location filename="../../ArchWall.py" line="416"/>
+      <location filename="../../ArchWall.py" line="439"/>
       <source>This mesh is an invalid solid</source>
       <translation type="unfinished">This mesh is an invalid solid</translation>
     </message>
@@ -3599,7 +3599,7 @@ unit to work with when opening the file.</source>
     <message>
       <location filename="../../Arch.py" line="221"/>
       <source>Equipment</source>
-      <translation>Опрема</translation>
+      <translation>Покућство</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimEquipment.py" line="56"/>
@@ -3678,7 +3678,7 @@ unit to work with when opening the file.</source>
     </message>
     <message>
       <location filename="../../ArchBuildingPart.py" line="842"/>
-      <location filename="../../ArchMaterial.py" line="95"/>
+      <location filename="../../ArchMaterial.py" line="93"/>
       <source>Reorder children alphabetically</source>
       <translation>Преуреди подређене по абецедном реду</translation>
     </message>
@@ -3710,7 +3710,7 @@ unit to work with when opening the file.</source>
     <message>
       <location filename="../../Arch.py" line="716"/>
       <source>Site</source>
-      <translation>Страница</translation>
+      <translation>Градилиште</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimSite.py" line="55"/>
@@ -3860,7 +3860,7 @@ If Run = 0 then the run is calculated so that the height is the same as the rela
     <message>
       <location filename="../../Arch.py" line="600"/>
       <source>External Reference</source>
-      <translation type="unfinished">External Reference</translation>
+      <translation>Спољашњи објекат</translation>
     </message>
     <message>
       <location filename="../../ArchReference.py" line="85"/>
@@ -3922,7 +3922,7 @@ If Run = 0 then the run is calculated so that the height is the same as the rela
     <message>
       <location filename="../../ArchReference.py" line="862"/>
       <source>External reference</source>
-      <translation type="unfinished">External reference</translation>
+      <translation>Спољашњи објекат</translation>
     </message>
     <message>
       <location filename="../../ArchReference.py" line="864"/>
@@ -3968,7 +3968,7 @@ If Run = 0 then the run is calculated so that the height is the same as the rela
     <message>
       <location filename="../../Arch.py" line="265"/>
       <source>Frame</source>
-      <translation type="unfinished">Frame</translation>
+      <translation>Оквир</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimFrame.py" line="55"/>
@@ -4038,7 +4038,7 @@ If Run = 0 then the run is calculated so that the height is the same as the rela
     <message>
       <location filename="../../bimcommands/BimWindow.py" line="100"/>
       <location filename="../../bimcommands/BimWindow.py" line="119"/>
-      <location filename="../../bimcommands/BimWindow.py" line="166"/>
+      <location filename="../../bimcommands/BimWindow.py" line="167"/>
       <source>Create Window</source>
       <translation>Направи прозор</translation>
     </message>
@@ -4048,32 +4048,32 @@ If Run = 0 then the run is calculated so that the height is the same as the rela
       <translation type="unfinished">Choose a face on an existing object or select a preset</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimWindow.py" line="190"/>
+      <location filename="../../bimcommands/BimWindow.py" line="191"/>
       <source>Window not based on sketch. Window not aligned or resized.</source>
       <translation type="unfinished">Window not based on sketch. Window not aligned or resized.</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimWindow.py" line="200"/>
+      <location filename="../../bimcommands/BimWindow.py" line="201"/>
       <source>No Width and/or Height constraint in window sketch. Window not resized.</source>
       <translation type="unfinished">No Width and/or Height constraint in window sketch. Window not resized.</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimWindow.py" line="203"/>
+      <location filename="../../bimcommands/BimWindow.py" line="204"/>
       <source>No window found. Cannot continue.</source>
       <translation>Није пронађен ниједан прозор. Није могуће наставити.</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimWindow.py" line="265"/>
+      <location filename="../../bimcommands/BimWindow.py" line="266"/>
       <source>Window options</source>
       <translation>Параметри прозора</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimWindow.py" line="269"/>
+      <location filename="../../bimcommands/BimWindow.py" line="270"/>
       <source>Auto include in host object</source>
       <translation type="unfinished">Auto include in host object</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimWindow.py" line="275"/>
+      <location filename="../../bimcommands/BimWindow.py" line="276"/>
       <source>Sill height</source>
       <translation type="unfinished">Sill height</translation>
     </message>
@@ -4139,8 +4139,8 @@ If Run = 0 then the run is calculated so that the height is the same as the rela
       <location filename="../../ArchWindow.py" line="1366"/>
       <location filename="../../ArchIFCView.py" line="56"/>
       <location filename="../../ArchAxisSystem.py" line="203"/>
-      <location filename="../../ArchMaterial.py" line="367"/>
-      <location filename="../../ArchMaterial.py" line="665"/>
+      <location filename="../../ArchMaterial.py" line="363"/>
+      <location filename="../../ArchMaterial.py" line="663"/>
       <location filename="../../ArchGrid.py" line="285"/>
       <location filename="../../ArchSchedule.py" line="432"/>
       <location filename="../../ArchAxis.py" line="581"/>
@@ -4178,26 +4178,26 @@ If Run = 0 then the run is calculated so that the height is the same as the rela
     </message>
     <message>
       <location filename="../../ArchWindow.py" line="1372"/>
-      <location filename="../../ArchMaterial.py" line="747"/>
-      <location filename="../../ArchMaterial.py" line="766"/>
+      <location filename="../../ArchMaterial.py" line="743"/>
+      <location filename="../../ArchMaterial.py" line="762"/>
       <source>Name</source>
       <translation>Име</translation>
     </message>
     <message>
       <location filename="../../ArchWindow.py" line="1373"/>
       <location filename="../../ArchComponent.py" line="2012"/>
-      <location filename="../../ArchCommands.py" line="1337"/>
+      <location filename="../../ArchCommands.py" line="1363"/>
       <location filename="../../bimcommands/BimIfcProperties.py" line="461"/>
       <source>Type</source>
       <translation>Врста</translation>
     </message>
     <message>
       <location filename="../../ArchWindow.py" line="1375"/>
-      <location filename="../../ArchMaterial.py" line="747"/>
-      <location filename="../../ArchMaterial.py" line="766"/>
+      <location filename="../../ArchMaterial.py" line="743"/>
+      <location filename="../../ArchMaterial.py" line="762"/>
       <location filename="../../bimcommands/BimPanel.py" line="162"/>
       <source>Thickness</source>
-      <translation>Дебљина</translation>
+      <translation>Танкозидни објекат</translation>
     </message>
     <message>
       <location filename="../../ArchWindow.py" line="1376"/>
@@ -4292,7 +4292,7 @@ If Run = 0 then the run is calculated so that the height is the same as the rela
     <message>
       <location filename="../../Arch.py" line="919"/>
       <source>Truss</source>
-      <translation type="unfinished">Truss</translation>
+      <translation>Решеткасти кровни носач</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimCurtainwall.py" line="56"/>
@@ -4376,8 +4376,8 @@ If Run = 0 then the run is calculated so that the height is the same as the rela
       <translation>Обједини дупликате</translation>
     </message>
     <message>
-      <location filename="../../ArchMaterial.py" line="747"/>
-      <location filename="../../ArchMaterial.py" line="766"/>
+      <location filename="../../ArchMaterial.py" line="743"/>
+      <location filename="../../ArchMaterial.py" line="762"/>
       <location filename="../../Arch.py" line="302"/>
       <source>Material</source>
       <translation>Материјал</translation>
@@ -4388,17 +4388,17 @@ If Run = 0 then the run is calculated so that the height is the same as the rela
       <translation type="unfinished">MultiMaterial</translation>
     </message>
     <message>
-      <location filename="../../ArchMaterial.py" line="797"/>
+      <location filename="../../ArchMaterial.py" line="793"/>
       <source>New layer</source>
       <translation type="unfinished">New layer</translation>
     </message>
     <message>
-      <location filename="../../ArchMaterial.py" line="834"/>
+      <location filename="../../ArchMaterial.py" line="830"/>
       <source>Total thickness</source>
       <translation>Укупна дебљина</translation>
     </message>
     <message>
-      <location filename="../../ArchMaterial.py" line="848"/>
+      <location filename="../../ArchMaterial.py" line="844"/>
       <source>depends on the object</source>
       <translation type="unfinished">depends on the object</translation>
     </message>
@@ -4628,7 +4628,7 @@ If Run = 0 then the run is calculated so that the height is the same as the rela
       <location filename="../../ArchPrecast.py" line="1416"/>
       <location filename="../../Arch.py" line="127"/>
       <source>Level</source>
-      <translation type="unfinished">Level</translation>
+      <translation>Спрат</translation>
     </message>
     <message>
       <location filename="../../ArchPrecast.py" line="1417"/>
@@ -4648,7 +4648,7 @@ If Run = 0 then the run is calculated so that the height is the same as the rela
     <message>
       <location filename="../../Arch.py" line="411"/>
       <source>PanelSheet</source>
-      <translation type="unfinished">PanelSheet</translation>
+      <translation>Табела панела</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimPanel.py" line="80"/>
@@ -4699,7 +4699,7 @@ If Run = 0 then the run is calculated so that the height is the same as the rela
     <message>
       <location filename="../../Arch.py" line="200"/>
       <source>Curtain Wall</source>
-      <translation type="unfinished">Curtain Wall</translation>
+      <translation>Зид завеса</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimCurtainwall.py" line="60"/>
@@ -4715,7 +4715,7 @@ If Run = 0 then the run is calculated so that the height is the same as the rela
     <message>
       <location filename="../../Arch.py" line="462"/>
       <source>Connector</source>
-      <translation type="unfinished">Connector</translation>
+      <translation>Фитинг</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimPipe.py" line="58"/>
@@ -4830,52 +4830,52 @@ If Run = 0 then the run is calculated so that the height is the same as the rela
       <translation>Приложи табелу</translation>
     </message>
     <message>
-      <location filename="../../ArchSchedule.py" line="568"/>
+      <location filename="../../ArchSchedule.py" line="569"/>
       <source>Import CSV file</source>
       <translation type="unfinished">Import CSV file</translation>
     </message>
     <message>
-      <location filename="../../ArchSchedule.py" line="601"/>
+      <location filename="../../ArchSchedule.py" line="602"/>
       <source>Export CSV file</source>
       <translation type="unfinished">Export CSV file</translation>
     </message>
     <message>
-      <location filename="../../ArchCommands.py" line="1098"/>
+      <location filename="../../ArchCommands.py" line="1124"/>
       <source>Export CSV File</source>
       <translation type="unfinished">Export CSV File</translation>
     </message>
     <message>
-      <location filename="../../ArchSchedule.py" line="622"/>
+      <location filename="../../ArchSchedule.py" line="623"/>
       <source>Unable to recognize that file type</source>
       <translation type="unfinished">Unable to recognize that file type</translation>
     </message>
     <message>
-      <location filename="../../ArchSchedule.py" line="644"/>
-      <location filename="../../ArchSchedule.py" line="662"/>
-      <location filename="../../ArchCommands.py" line="1009"/>
+      <location filename="../../ArchSchedule.py" line="645"/>
+      <location filename="../../ArchSchedule.py" line="663"/>
+      <location filename="../../ArchCommands.py" line="1035"/>
       <source>Description</source>
       <translation>Опис</translation>
     </message>
     <message>
-      <location filename="../../ArchSchedule.py" line="644"/>
-      <location filename="../../ArchSchedule.py" line="662"/>
+      <location filename="../../ArchSchedule.py" line="645"/>
+      <location filename="../../ArchSchedule.py" line="663"/>
       <location filename="../../ArchComponent.py" line="2013"/>
-      <location filename="../../ArchCommands.py" line="1338"/>
+      <location filename="../../ArchCommands.py" line="1364"/>
       <location filename="../../bimcommands/BimIfcProperties.py" line="462"/>
       <source>Value</source>
       <translation>Вредност</translation>
     </message>
     <message>
-      <location filename="../../ArchSchedule.py" line="644"/>
-      <location filename="../../ArchSchedule.py" line="662"/>
-      <location filename="../../ArchCommands.py" line="1339"/>
+      <location filename="../../ArchSchedule.py" line="645"/>
+      <location filename="../../ArchSchedule.py" line="663"/>
+      <location filename="../../ArchCommands.py" line="1365"/>
       <source>Unit</source>
       <translation>Мерна јединица</translation>
     </message>
     <message>
-      <location filename="../../ArchSchedule.py" line="723"/>
+      <location filename="../../ArchSchedule.py" line="724"/>
       <source>Schedule</source>
-      <translation type="unfinished">Schedule</translation>
+      <translation>Распоређивање података</translation>
     </message>
     <message>
       <location filename="../../ArchFloor.py" line="155"/>
@@ -4978,7 +4978,7 @@ Floor creation aborted.</translation>
       <location filename="../../ArchSite.py" line="864"/>
       <location filename="../../ArchComponent.py" line="1514"/>
       <source>Toggle subcomponents</source>
-      <translation type="unfinished">Toggle subcomponents</translation>
+      <translation>Сакриј/Прикажи компоненте објекта</translation>
     </message>
     <message>
       <location filename="../../ArchComponent.py" line="1640"/>
@@ -4987,7 +4987,7 @@ Floor creation aborted.</translation>
     </message>
     <message>
       <location filename="../../ArchComponent.py" line="1948"/>
-      <location filename="../../ArchCommands.py" line="214"/>
+      <location filename="../../ArchCommands.py" line="240"/>
       <source>Component</source>
       <translation type="unfinished">Component</translation>
     </message>
@@ -5177,7 +5177,7 @@ Floor creation aborted.</translation>
     </message>
     <message>
       <location filename="../../ArchSectionPlane.py" line="1338"/>
-      <location filename="../../bimcommands/BimWall.py" line="313"/>
+      <location filename="../../bimcommands/BimWall.py" line="315"/>
       <source>Center</source>
       <translation>По средини</translation>
     </message>
@@ -5190,7 +5190,7 @@ Floor creation aborted.</translation>
       <location filename="../../Arch.py" line="138"/>
       <location filename="../../ArchBuilding.py" line="206"/>
       <source>Building</source>
-      <translation type="unfinished">Building</translation>
+      <translation>Зграда</translation>
     </message>
     <message>
       <location filename="../../ArchBuilding.py" line="247"/>
@@ -5256,8 +5256,8 @@ Building creation aborted.</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimWall.py" line="90"/>
-      <location filename="../../bimcommands/BimWall.py" line="164"/>
-      <location filename="../../bimcommands/BimWall.py" line="416"/>
+      <location filename="../../bimcommands/BimWall.py" line="166"/>
+      <location filename="../../bimcommands/BimWall.py" line="418"/>
       <source>Create Wall</source>
       <translation>Направи Зид</translation>
     </message>
@@ -5267,37 +5267,37 @@ Building creation aborted.</translation>
       <translation>Прва тачка зида</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimWall.py" line="274"/>
+      <location filename="../../bimcommands/BimWall.py" line="276"/>
       <source>Wall options</source>
       <translation>Параметри зида</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimWall.py" line="278"/>
+      <location filename="../../bimcommands/BimWall.py" line="280"/>
       <source>Wall Presets...</source>
       <translation type="unfinished">Wall Presets...</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimWall.py" line="279"/>
+      <location filename="../../bimcommands/BimWall.py" line="281"/>
       <source>This list shows all the MultiMaterials objects of this document. Create some to define wall types.</source>
       <translation type="unfinished">This list shows all the MultiMaterials objects of this document. Create some to define wall types.</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimWall.py" line="311"/>
+      <location filename="../../bimcommands/BimWall.py" line="313"/>
       <source>Alignment</source>
       <translation>Поравнавање</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimWall.py" line="313"/>
+      <location filename="../../bimcommands/BimWall.py" line="315"/>
       <source>Left</source>
       <translation>Слева</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimWall.py" line="314"/>
+      <location filename="../../bimcommands/BimWall.py" line="316"/>
       <source>Right</source>
       <translation>Сдесна</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimWall.py" line="329"/>
+      <location filename="../../bimcommands/BimWall.py" line="331"/>
       <source>Use sketches</source>
       <translation>Користи скице</translation>
     </message>
@@ -5316,106 +5316,111 @@ Building creation aborted.</translation>
       <location filename="../../bimcommands/BimArchUtils.py" line="461"/>
       <location filename="../../bimcommands/BimArchUtils.py" line="476"/>
       <source>Merge Walls</source>
-      <translation>Обједини зидове</translation>
+      <translation>Споји зидове</translation>
     </message>
     <message>
-      <location filename="../../ArchWall.py" line="407"/>
+      <location filename="../../ArchWall.py" line="243"/>
+      <source>changed 'Normal' to [0, 0, 1] to preserve extrusion direction</source>
+      <translation type="unfinished">changed 'Normal' to [0, 0, 1] to preserve extrusion direction</translation>
+    </message>
+    <message>
+      <location filename="../../ArchWall.py" line="430"/>
       <source>Cannot compute blocks for wall</source>
       <translation type="unfinished">Cannot compute blocks for wall</translation>
     </message>
     <message>
-      <location filename="../../ArchWall.py" line="518"/>
+      <location filename="../../ArchWall.py" line="541"/>
       <source>Error: Unable to modify the base object of this wall</source>
       <translation type="unfinished">Error: Unable to modify the base object of this wall</translation>
     </message>
     <message>
-      <location filename="../../ArchWall.py" line="1280"/>
+      <location filename="../../ArchWall.py" line="1303"/>
       <source>Flip direction</source>
       <translation>Обрни смер</translation>
     </message>
     <message>
-      <location filename="../../ArchCommands.py" line="408"/>
+      <location filename="../../ArchCommands.py" line="434"/>
       <source>Invalid cut plane</source>
       <translation type="unfinished">Invalid cut plane</translation>
     </message>
     <message>
-      <location filename="../../ArchCommands.py" line="691"/>
+      <location filename="../../ArchCommands.py" line="717"/>
       <source>is not closed</source>
       <translation type="unfinished">is not closed</translation>
     </message>
     <message>
-      <location filename="../../ArchCommands.py" line="693"/>
+      <location filename="../../ArchCommands.py" line="719"/>
       <source>is not valid</source>
       <translation type="unfinished">is not valid</translation>
     </message>
     <message>
-      <location filename="../../ArchCommands.py" line="695"/>
+      <location filename="../../ArchCommands.py" line="721"/>
       <source>doesn't contain any solid</source>
       <translation type="unfinished">doesn't contain any solid</translation>
     </message>
     <message>
-      <location filename="../../ArchCommands.py" line="701"/>
+      <location filename="../../ArchCommands.py" line="727"/>
       <source>contains a non-closed solid</source>
       <translation type="unfinished">contains a non-closed solid</translation>
     </message>
     <message>
-      <location filename="../../ArchCommands.py" line="703"/>
+      <location filename="../../ArchCommands.py" line="729"/>
       <source>contains faces that are not part of any solid</source>
       <translation type="unfinished">contains faces that are not part of any solid</translation>
     </message>
     <message>
-      <location filename="../../ArchCommands.py" line="1003"/>
+      <location filename="../../ArchCommands.py" line="1029"/>
       <source>Survey</source>
-      <translation>Анкета</translation>
+      <translation>Истражи модел</translation>
     </message>
     <message>
-      <location filename="../../ArchCommands.py" line="1004"/>
+      <location filename="../../ArchCommands.py" line="1030"/>
       <source>Set description</source>
       <translation type="unfinished">Set description</translation>
     </message>
     <message>
-      <location filename="../../ArchCommands.py" line="1005"/>
+      <location filename="../../ArchCommands.py" line="1031"/>
       <source>Clear</source>
       <translation>Обриши</translation>
     </message>
     <message>
-      <location filename="../../ArchCommands.py" line="1006"/>
+      <location filename="../../ArchCommands.py" line="1032"/>
       <source>Copy Length</source>
       <translation type="unfinished">Copy Length</translation>
     </message>
     <message>
-      <location filename="../../ArchCommands.py" line="1007"/>
+      <location filename="../../ArchCommands.py" line="1033"/>
       <source>Copy Area</source>
       <translation type="unfinished">Copy Area</translation>
     </message>
     <message>
-      <location filename="../../ArchCommands.py" line="1008"/>
+      <location filename="../../ArchCommands.py" line="1034"/>
       <source>Export CSV</source>
       <translation type="unfinished">Export CSV</translation>
     </message>
     <message>
-      <location filename="../../ArchCommands.py" line="1011"/>
+      <location filename="../../ArchCommands.py" line="1037"/>
       <source>Area</source>
       <translation type="unfinished">Area</translation>
     </message>
     <message>
-      <location filename="../../ArchCommands.py" line="1056"/>
+      <location filename="../../ArchCommands.py" line="1082"/>
       <source>Total</source>
       <translation type="unfinished">Total</translation>
     </message>
     <message>
-      <location filename="../../ArchCommands.py" line="1136"/>
+      <location filename="../../ArchCommands.py" line="1162"/>
       <source>Object doesn't have settable IFC attributes</source>
       <translation type="unfinished">Object doesn't have settable IFC attributes</translation>
     </message>
     <message>
-      <location filename="../../ArchCommands.py" line="1142"/>
+      <location filename="../../ArchCommands.py" line="1168"/>
       <source>Disabling B-rep force flag of object</source>
       <translation type="unfinished">Disabling B-rep force flag of object</translation>
     </message>
     <message>
-      <location filename="../../ArchCommands.py" line="1145"/>
-      <location filename="../../ArchCommands.py" line="1148"/>
+      <location filename="../../ArchCommands.py" line="1171"/>
+      <location filename="../../ArchCommands.py" line="1174"/>
       <source>Enabling B-rep force flag of object</source>
       <translation type="unfinished">Enabling B-rep force flag of object</translation>
     </message>
@@ -5442,12 +5447,12 @@ Building creation aborted.</translation>
     <message>
       <location filename="../../bimcommands/BimArchUtils.py" line="127"/>
       <source>Split Mesh</source>
-      <translation type="unfinished">Split Mesh</translation>
+      <translation>Подели мрежу</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimArchUtils.py" line="170"/>
       <source>Mesh to Shape</source>
-      <translation type="unfinished">Mesh to Shape</translation>
+      <translation>Мрежа у део</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimArchUtils.py" line="260"/>
@@ -5461,12 +5466,12 @@ Building creation aborted.</translation>
       <translation type="unfinished">Create Component</translation>
     </message>
     <message>
-      <location filename="../../ArchCommands.py" line="1336"/>
+      <location filename="../../ArchCommands.py" line="1362"/>
       <source>Key</source>
       <translation type="unfinished">Key</translation>
     </message>
     <message>
-      <location filename="../../ArchCommands.py" line="1346"/>
+      <location filename="../../ArchCommands.py" line="1372"/>
       <source>The object doesn't have an IfcProperties attribute. Cancel spreadsheet creation for object:</source>
       <translation type="unfinished">The object doesn't have an IfcProperties attribute. Cancel spreadsheet creation for object:</translation>
     </message>
@@ -5496,7 +5501,7 @@ Building creation aborted.</translation>
     <message>
       <location filename="../../ArchStructure.py" line="196"/>
       <source>Multiple Structures</source>
-      <translation type="unfinished">Multiple Structures</translation>
+      <translation>Више структура</translation>
     </message>
     <message>
       <location filename="../../ArchStructure.py" line="199"/>
@@ -5509,7 +5514,7 @@ Building creation aborted.</translation>
     <message>
       <location filename="../../ArchStructure.py" line="234"/>
       <source>Structural System</source>
-      <translation type="unfinished">Structural System</translation>
+      <translation>Cтруктурни Cиcтем</translation>
     </message>
     <message>
       <location filename="../../ArchStructure.py" line="237"/>
@@ -5682,7 +5687,7 @@ Building creation aborted.</translation>
     </message>
     <message>
       <location filename="../../ArchEquipment.py" line="192"/>
-      <location filename="../../ArchMaterial.py" line="170"/>
+      <location filename="../../ArchMaterial.py" line="166"/>
       <source>A standard code (MasterFormat, OmniClass,...)</source>
       <translation type="unfinished">A standard code (MasterFormat, OmniClass,...)</translation>
     </message>
@@ -6619,43 +6624,43 @@ Building creation aborted.</translation>
       <translation type="unfinished">When true, the fence will be colored like the original post and section.</translation>
     </message>
     <message>
-      <location filename="../../ArchMaterial.py" line="168"/>
-      <location filename="../../ArchMaterial.py" line="620"/>
+      <location filename="../../ArchMaterial.py" line="164"/>
+      <location filename="../../ArchMaterial.py" line="618"/>
       <source>A description for this material</source>
       <translation type="unfinished">A description for this material</translation>
     </message>
     <message>
-      <location filename="../../ArchMaterial.py" line="172"/>
+      <location filename="../../ArchMaterial.py" line="168"/>
       <source>A URL where to find information about this material</source>
       <translation type="unfinished">A URL where to find information about this material</translation>
     </message>
     <message>
-      <location filename="../../ArchMaterial.py" line="174"/>
+      <location filename="../../ArchMaterial.py" line="170"/>
       <source>The transparency value of this material</source>
       <translation>Провидности овог материјала</translation>
     </message>
     <message>
-      <location filename="../../ArchMaterial.py" line="176"/>
+      <location filename="../../ArchMaterial.py" line="172"/>
       <source>The color of this material</source>
       <translation>Боја овог материјала</translation>
     </message>
     <message>
-      <location filename="../../ArchMaterial.py" line="178"/>
+      <location filename="../../ArchMaterial.py" line="174"/>
       <source>The color of this material when cut</source>
       <translation type="unfinished">The color of this material when cut</translation>
     </message>
     <message>
-      <location filename="../../ArchMaterial.py" line="621"/>
+      <location filename="../../ArchMaterial.py" line="619"/>
       <source>The list of layer names</source>
       <translation type="unfinished">The list of layer names</translation>
     </message>
     <message>
-      <location filename="../../ArchMaterial.py" line="622"/>
+      <location filename="../../ArchMaterial.py" line="620"/>
       <source>The list of layer materials</source>
       <translation type="unfinished">The list of layer materials</translation>
     </message>
     <message>
-      <location filename="../../ArchMaterial.py" line="623"/>
+      <location filename="../../ArchMaterial.py" line="621"/>
       <source>The list of layer thicknesses</source>
       <translation type="unfinished">The list of layer thicknesses</translation>
     </message>
@@ -7698,7 +7703,7 @@ Building creation aborted.</translation>
       <location filename="../../ArchStructure.py" line="1509"/>
       <location filename="../../ArchStructure.py" line="1512"/>
       <source>Structure tools</source>
-      <translation type="unfinished">Structure tools</translation>
+      <translation>Алатке за структуре</translation>
     </message>
   </context>
   <context>
@@ -7706,7 +7711,7 @@ Building creation aborted.</translation>
     <message>
       <location filename="../../bimcommands/BimEquipment.py" line="43"/>
       <source>Equipment</source>
-      <translation>Опрема</translation>
+      <translation>Покућство</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimEquipment.py" line="47"/>
@@ -7856,7 +7861,7 @@ Building creation aborted.</translation>
     <message>
       <location filename="../../bimcommands/BimSite.py" line="44"/>
       <source>Site</source>
-      <translation>Страница</translation>
+      <translation>Градилиште</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimSite.py" line="48"/>
@@ -7882,7 +7887,7 @@ Building creation aborted.</translation>
     <message>
       <location filename="../../bimcommands/BimCutPlane.py" line="42"/>
       <source>Cut with plane</source>
-      <translation type="unfinished">Cut with plane</translation>
+      <translation>Одсеци страницом</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimCutPlane.py" line="45"/>
@@ -7895,7 +7900,7 @@ Building creation aborted.</translation>
     <message>
       <location filename="../../bimcommands/BimReference.py" line="42"/>
       <source>External reference</source>
-      <translation type="unfinished">External reference</translation>
+      <translation>Спољашњи објекат</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimReference.py" line="46"/>
@@ -7908,7 +7913,7 @@ Building creation aborted.</translation>
     <message>
       <location filename="../../bimcommands/BimFrame.py" line="42"/>
       <source>Frame</source>
-      <translation type="unfinished">Frame</translation>
+      <translation>Оквир</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimFrame.py" line="46"/>
@@ -7947,7 +7952,7 @@ Building creation aborted.</translation>
     <message>
       <location filename="../../bimcommands/BimTruss.py" line="42"/>
       <source>Truss</source>
-      <translation type="unfinished">Truss</translation>
+      <translation>Решеткасти кровни носач</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimTruss.py" line="46"/>
@@ -8053,8 +8058,8 @@ Building creation aborted.</translation>
     </message>
     <message>
       <location filename="../../ArchGrid.py" line="67"/>
-      <source>The sizes for rows</source>
-      <translation type="unfinished">The sizes for rows</translation>
+      <source>The sizes of rows</source>
+      <translation type="unfinished">The sizes of rows</translation>
     </message>
     <message>
       <location filename="../../ArchGrid.py" line="69"/>
@@ -8120,7 +8125,7 @@ Building creation aborted.</translation>
     <message>
       <location filename="../../bimcommands/BimPanel.py" line="249"/>
       <source>Panel Cut</source>
-      <translation type="unfinished">Panel Cut</translation>
+      <translation>2Д погледи панела</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimPanel.py" line="253"/>
@@ -8133,7 +8138,7 @@ Building creation aborted.</translation>
     <message>
       <location filename="../../bimcommands/BimPanel.py" line="278"/>
       <source>Panel Sheet</source>
-      <translation type="unfinished">Panel Sheet</translation>
+      <translation>Табела панела</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimPanel.py" line="282"/>
@@ -8146,7 +8151,7 @@ Building creation aborted.</translation>
     <message>
       <location filename="../../bimcommands/BimPanel.py" line="314"/>
       <source>Nest</source>
-      <translation type="unfinished">Nest</translation>
+      <translation>Слагање</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimPanel.py" line="318"/>
@@ -8160,7 +8165,7 @@ Building creation aborted.</translation>
       <location filename="../../bimcommands/BimPanel.py" line="485"/>
       <location filename="../../bimcommands/BimPanel.py" line="489"/>
       <source>Panel tools</source>
-      <translation type="unfinished">Panel tools</translation>
+      <translation>Алатке за панеле</translation>
     </message>
   </context>
   <context>
@@ -8168,7 +8173,7 @@ Building creation aborted.</translation>
     <message>
       <location filename="../../bimcommands/BimCurtainwall.py" line="43"/>
       <source>Curtain Wall</source>
-      <translation type="unfinished">Curtain Wall</translation>
+      <translation>Зид завеса</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimCurtainwall.py" line="47"/>
@@ -8194,7 +8199,7 @@ Building creation aborted.</translation>
     <message>
       <location filename="../../bimcommands/BimPipe.py" line="81"/>
       <source>Connector</source>
-      <translation type="unfinished">Connector</translation>
+      <translation>Фитинг</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimPipe.py" line="85"/>
@@ -8216,7 +8221,7 @@ Building creation aborted.</translation>
     <message>
       <location filename="../../bimcommands/BimSchedule.py" line="41"/>
       <source>Schedule</source>
-      <translation type="unfinished">Schedule</translation>
+      <translation>Распоређивање података</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimSchedule.py" line="44"/>
@@ -8229,7 +8234,7 @@ Building creation aborted.</translation>
     <message>
       <location filename="../../ArchFloor.py" line="118"/>
       <source>Level</source>
-      <translation type="unfinished">Level</translation>
+      <translation>Спрат</translation>
     </message>
     <message>
       <location filename="../../ArchFloor.py" line="122"/>
@@ -8264,7 +8269,7 @@ Building creation aborted.</translation>
     <message>
       <location filename="../../bimcommands/BimRebar.py" line="42"/>
       <source>Custom Rebar</source>
-      <translation type="unfinished">Custom Rebar</translation>
+      <translation>Сопствена арматура</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimRebar.py" line="46"/>
@@ -8277,7 +8282,7 @@ Building creation aborted.</translation>
     <message>
       <location filename="../../bimcommands/BimSectionPlane.py" line="43"/>
       <source>Section Plane</source>
-      <translation type="unfinished">Section Plane</translation>
+      <translation>Пресечна раван</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimSectionPlane.py" line="46"/>
@@ -8291,7 +8296,7 @@ Building creation aborted.</translation>
       <location filename="../../ArchBuilding.py" line="221"/>
       <location filename="../../bimcommands/BimBuildingPart.py" line="73"/>
       <source>Building</source>
-      <translation type="unfinished">Building</translation>
+      <translation>Зграда</translation>
     </message>
     <message>
       <location filename="../../ArchBuilding.py" line="225"/>
@@ -8322,7 +8327,7 @@ Building creation aborted.</translation>
     <message>
       <location filename="../../bimcommands/BimArchUtils.py" line="428"/>
       <source>Merge Walls</source>
-      <translation>Обједини зидове</translation>
+      <translation>Споји зидове</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimArchUtils.py" line="431"/>
@@ -8335,7 +8340,7 @@ Building creation aborted.</translation>
     <message>
       <location filename="../../bimcommands/BimArchUtils.py" line="42"/>
       <source>Add component</source>
-      <translation type="unfinished">Add component</translation>
+      <translation>Додај компоненту</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimArchUtils.py" line="45"/>
@@ -8348,7 +8353,7 @@ Building creation aborted.</translation>
     <message>
       <location filename="../../bimcommands/BimArchUtils.py" line="78"/>
       <source>Remove component</source>
-      <translation type="unfinished">Remove component</translation>
+      <translation>Уклони компоненту</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimArchUtils.py" line="81"/>
@@ -8361,7 +8366,7 @@ Building creation aborted.</translation>
     <message>
       <location filename="../../bimcommands/BimArchUtils.py" line="116"/>
       <source>Split Mesh</source>
-      <translation type="unfinished">Split Mesh</translation>
+      <translation>Подели мрежу</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimArchUtils.py" line="119"/>
@@ -8374,7 +8379,7 @@ Building creation aborted.</translation>
     <message>
       <location filename="../../bimcommands/BimArchUtils.py" line="144"/>
       <source>Mesh to Shape</source>
-      <translation type="unfinished">Mesh to Shape</translation>
+      <translation>Мрежа у део</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimArchUtils.py" line="147"/>
@@ -8400,7 +8405,7 @@ Building creation aborted.</translation>
     <message>
       <location filename="../../bimcommands/BimArchUtils.py" line="230"/>
       <source>Close holes</source>
-      <translation type="unfinished">Close holes</translation>
+      <translation>Затвори рупе</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimArchUtils.py" line="233"/>
@@ -8413,7 +8418,7 @@ Building creation aborted.</translation>
     <message>
       <location filename="../../bimcommands/BimArchUtils.py" line="249"/>
       <source>Check</source>
-      <translation type="unfinished">Check</translation>
+      <translation>Провери објекте</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimArchUtils.py" line="252"/>
@@ -8426,7 +8431,7 @@ Building creation aborted.</translation>
     <message>
       <location filename="../../bimcommands/BimArchUtils.py" line="273"/>
       <source>Survey</source>
-      <translation>Анкета</translation>
+      <translation>Истражи модел</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimArchUtils.py" line="276"/>
@@ -8439,7 +8444,7 @@ Building creation aborted.</translation>
     <message>
       <location filename="../../bimcommands/BimArchUtils.py" line="308"/>
       <source>Component</source>
-      <translation type="unfinished">Component</translation>
+      <translation>Део у BIM компоненту</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimArchUtils.py" line="312"/>
@@ -8465,7 +8470,7 @@ Building creation aborted.</translation>
     <message>
       <location filename="../../bimcommands/BimArchUtils.py" line="362"/>
       <source>Create IFC spreadsheet...</source>
-      <translation type="unfinished">Create IFC spreadsheet...</translation>
+      <translation>Направи IFC табелу...</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimArchUtils.py" line="366"/>
@@ -8478,7 +8483,7 @@ Building creation aborted.</translation>
     <message>
       <location filename="../../bimcommands/BimArchUtils.py" line="390"/>
       <source>Toggle subcomponents</source>
-      <translation type="unfinished">Toggle subcomponents</translation>
+      <translation>Сакриј/Прикажи компоненте објекта</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimArchUtils.py" line="393"/>
@@ -8786,7 +8791,7 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
       <location filename="../../bimcommands/BimIfcExplorer.py" line="107"/>
       <location filename="../../bimcommands/BimIfcExplorer.py" line="202"/>
       <source>IFC Explorer</source>
-      <translation type="unfinished">IFC Explorer</translation>
+      <translation>Истражи IFC датотеку</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimIfcExplorer.py" line="480"/>
@@ -9320,7 +9325,7 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
     <message>
       <location filename="../../bimcommands/BimProjectManager.py" line="249"/>
       <source>Level</source>
-      <translation type="unfinished">Level</translation>
+      <translation>Спрат</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimProjectManager.py" line="272"/>
@@ -9398,12 +9403,12 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
       <translation type="unfinished">Unit system updated for all opened documents</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimSetup.py" line="670"/>
+      <location filename="../../bimcommands/BimSetup.py" line="673"/>
       <source>IfcOpenShell not found</source>
       <translation type="unfinished">IfcOpenShell not found</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimSetup.py" line="674"/>
+      <location filename="../../bimcommands/BimSetup.py" line="677"/>
       <source>IfcOpenShell is needed to import and export IFC files. It appears to be missing on your system. Would you like to download and install it now? It will be installed in FreeCAD's Macros directory.</source>
       <translation type="unfinished">IfcOpenShell is needed to import and export IFC files. It appears to be missing on your system. Would you like to download and install it now? It will be installed in FreeCAD's Macros directory.</translation>
     </message>
@@ -9415,7 +9420,7 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
     <message>
       <location filename="../../bimcommands/BimSlab.py" line="84"/>
       <source>Slab</source>
-      <translation type="unfinished">Slab</translation>
+      <translation>Плоча</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimTDPage.py" line="61"/>
@@ -9648,7 +9653,7 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
     <message>
       <location filename="../../bimcommands/BimBeam.py" line="47"/>
       <source>Beam</source>
-      <translation type="unfinished">Beam</translation>
+      <translation>Греда</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimBeam.py" line="50"/>
@@ -9661,7 +9666,7 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
     <message>
       <location filename="../../bimcommands/BimBox.py" line="38"/>
       <source>Box</source>
-      <translation type="unfinished">Box</translation>
+      <translation>Квадар</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimBox.py" line="41"/>
@@ -9687,7 +9692,7 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
     <message>
       <location filename="../../bimcommands/BimBuildingPart.py" line="44"/>
       <source>Level</source>
-      <translation type="unfinished">Level</translation>
+      <translation>Спрат</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimBuildingPart.py" line="48"/>
@@ -9700,7 +9705,7 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
     <message>
       <location filename="../../bimcommands/BimClassification.py" line="41"/>
       <source>Manage classification...</source>
-      <translation type="unfinished">Manage classification...</translation>
+      <translation>Управљај класификацијом...</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimClassification.py" line="45"/>
@@ -9814,7 +9819,7 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
     <message>
       <location filename="../../bimcommands/BimDiff.py" line="37"/>
       <source>IFC Diff</source>
-      <translation type="unfinished">IFC Diff</translation>
+      <translation>IFC Разлике</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimDiff.py" line="40"/>
@@ -9827,7 +9832,7 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
     <message>
       <location filename="../../bimcommands/BimDimensions.py" line="43"/>
       <source>Aligned dimension</source>
-      <translation type="unfinished">Aligned dimension</translation>
+      <translation>Поравната кота</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimDimensions.py" line="46"/>
@@ -9840,7 +9845,7 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
     <message>
       <location filename="../../bimcommands/BimDimensions.py" line="61"/>
       <source>Horizontal dimension</source>
-      <translation type="unfinished">Horizontal dimension</translation>
+      <translation>Хоризонтална кота</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimDimensions.py" line="64"/>
@@ -9853,7 +9858,7 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
     <message>
       <location filename="../../bimcommands/BimDimensions.py" line="83"/>
       <source>Vertical dimension</source>
-      <translation type="unfinished">Vertical dimension</translation>
+      <translation>Вертикална кота</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimDimensions.py" line="86"/>
@@ -9941,7 +9946,7 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
     <message>
       <location filename="../../bimcommands/BimGlue.py" line="39"/>
       <source>Glue</source>
-      <translation type="unfinished">Glue</translation>
+      <translation>Лепак</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimGlue.py" line="42"/>
@@ -9967,7 +9972,7 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
     <message>
       <location filename="../../bimcommands/BimIfcElements.py" line="40"/>
       <source>Manage IFC elements...</source>
-      <translation type="unfinished">Manage IFC elements...</translation>
+      <translation>Управљај IFC елементима...</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimIfcElements.py" line="44"/>
@@ -9993,7 +9998,7 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
     <message>
       <location filename="../../bimcommands/BimIfcProperties.py" line="44"/>
       <source>Manage IFC properties...</source>
-      <translation type="unfinished">Manage IFC properties...</translation>
+      <translation>Управљај IFC својствима...</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimIfcProperties.py" line="48"/>
@@ -10006,7 +10011,7 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
     <message>
       <location filename="../../bimcommands/BimIfcQuantities.py" line="61"/>
       <source>Manage IFC quantities...</source>
-      <translation type="unfinished">Manage IFC quantities...</translation>
+      <translation>Управљај IFC количинама...</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimIfcQuantities.py" line="65"/>
@@ -10045,7 +10050,7 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
     <message>
       <location filename="../../bimcommands/BimLeader.py" line="44"/>
       <source>Leader</source>
-      <translation>Показне линије</translation>
+      <translation>Показна линија</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimLeader.py" line="47"/>
@@ -10058,7 +10063,7 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
     <message>
       <location filename="../../bimcommands/BimLibrary.py" line="84"/>
       <source>Objects library</source>
-      <translation type="unfinished">Objects library</translation>
+      <translation>Библиотека објеката</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimLibrary.py" line="85"/>
@@ -10182,7 +10187,7 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
     <message>
       <location filename="../../bimcommands/BimPreflight.py" line="64"/>
       <source>Preflight checks...</source>
-      <translation type="unfinished">Preflight checks...</translation>
+      <translation>IFC Провера...</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimPreflight.py" line="68"/>
@@ -10208,7 +10213,7 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
     <message>
       <location filename="../../bimcommands/BimProjectManager.py" line="39"/>
       <source>Manage project...</source>
-      <translation type="unfinished">Manage project...</translation>
+      <translation>Поставке пројекта...</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimProjectManager.py" line="42"/>
@@ -10221,7 +10226,7 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
     <message>
       <location filename="../../bimcommands/BimReextrude.py" line="39"/>
       <source>Reextrude</source>
-      <translation type="unfinished">Reextrude</translation>
+      <translation>Параметризуј извлачење</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimReextrude.py" line="42"/>
@@ -10260,7 +10265,7 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
     <message>
       <location filename="../../bimcommands/BimRewire.py" line="40"/>
       <source>Rewire</source>
-      <translation type="unfinished">Rewire</translation>
+      <translation>Направи жичани рам</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimRewire.py" line="43"/>
@@ -10273,7 +10278,7 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
     <message>
       <location filename="../../bimcommands/BimSetup.py" line="39"/>
       <source>BIM Setup...</source>
-      <translation type="unfinished">BIM Setup...</translation>
+      <translation>BIM поставке...</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimSetup.py" line="42"/>
@@ -10286,7 +10291,7 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
     <message>
       <location filename="../../bimcommands/BimShape2DView.py" line="42"/>
       <source>Shape-based view</source>
-      <translation type="unfinished">Shape-based view</translation>
+      <translation>Пројицирање на раван</translation>
     </message>
   </context>
   <context>
@@ -10328,7 +10333,7 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
     <message>
       <location filename="../../bimcommands/BimSlab.py" line="43"/>
       <source>Slab</source>
-      <translation type="unfinished">Slab</translation>
+      <translation>Плоча</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimSlab.py" line="46"/>
@@ -10380,7 +10385,7 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
     <message>
       <location filename="../../bimcommands/BimTogglePanels.py" line="39"/>
       <source>Toggle bottom panels</source>
-      <translation type="unfinished">Toggle bottom panels</translation>
+      <translation>Сакриј/Прикажи излазне панеле</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimTogglePanels.py" line="42"/>
@@ -10393,7 +10398,7 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
     <message>
       <location filename="../../bimcommands/BimTrash.py" line="40"/>
       <source>Move to Trash</source>
-      <translation type="unfinished">Move to Trash</translation>
+      <translation>Премести у смеће</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimTrash.py" line="43"/>
@@ -10419,7 +10424,7 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
     <message>
       <location filename="../../bimcommands/BimUnclone.py" line="39"/>
       <source>Unclone</source>
-      <translation type="unfinished">Unclone</translation>
+      <translation>Независни клон</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimUnclone.py" line="43"/>
@@ -10432,7 +10437,7 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
     <message>
       <location filename="../../bimcommands/BimViews.py" line="40"/>
       <source>Views manager</source>
-      <translation type="unfinished">Views manager</translation>
+      <translation>Менаџер погледа</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimViews.py" line="43"/>
@@ -10528,7 +10533,7 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
     <message>
       <location filename="../../nativeifc/ifc_commands.py" line="54"/>
       <source>IFC Diff...</source>
-      <translation type="unfinished">IFC Diff...</translation>
+      <translation>IFC Разлике...</translation>
     </message>
   </context>
   <context>
@@ -10567,7 +10572,7 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
     <message>
       <location filename="../../nativeifc/ifc_commands.py" line="147"/>
       <source>Make IFC project</source>
-      <translation type="unfinished">Make IFC project</translation>
+      <translation>Направи IFC пројекат</translation>
     </message>
   </context>
   <context>
@@ -10614,7 +10619,7 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
     <message>
       <location filename="../ui/dialogDiff.ui" line="14"/>
       <source>IFC diff</source>
-      <translation type="unfinished">IFC diff</translation>
+      <translation>IFC Разлике</translation>
     </message>
   </context>
   <context>
@@ -10622,7 +10627,7 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
     <message>
       <location filename="../ui/dialogSetup.ui" line="17"/>
       <source>BIM Setup</source>
-      <translation type="unfinished">BIM Setup</translation>
+      <translation>BIM поставке</translation>
     </message>
     <message>
       <location filename="../ui/dialogSetup.ui" line="23"/>
@@ -10632,7 +10637,7 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
     <message>
       <location filename="../ui/dialogSetup.ui" line="33"/>
       <source>Hover your mouse on each setting for additional info.</source>
-      <translation type="unfinished">Hover your mouse on each setting for additional info.</translation>
+      <translation>За додатне информације лебди мишем изнад сваког подешавања.</translation>
     </message>
     <message>
       <location filename="../ui/dialogSetup.ui" line="230"/>
@@ -11022,7 +11027,7 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
     <message>
       <location filename="../../bimcommands/BimArchUtils.py" line="212"/>
       <source>Remove Shape from BIM</source>
-      <translation type="unfinished">Remove Shape from BIM</translation>
+      <translation>Параметризуј</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimArchUtils.py" line="215"/>
@@ -11035,7 +11040,7 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
     <message>
       <location filename="../../bimcommands/BimArchUtils.py" line="290"/>
       <source>Toggle IFC B-rep flag</source>
-      <translation type="unfinished">Toggle IFC B-rep flag</translation>
+      <translation>Укључи/Искључи IFC B-rep заставицу</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimArchUtils.py" line="293"/>

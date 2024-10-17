@@ -162,7 +162,7 @@ public:
         // choose text color
         auto tc = cfg.find("SplashTextColor");
         if (tc != cfg.end()) {
-            QColor col; col.setNamedColor(QString::fromLatin1(tc->second.c_str()));
+            QColor col(QString::fromStdString(tc->second));
             if (col.isValid()) {
                 textColor = col;
             }
@@ -819,13 +819,20 @@ void AboutDialog::copyToClipboard()
 
     QString deskEnv = QProcessEnvironment::systemEnvironment().value(QStringLiteral("XDG_CURRENT_DESKTOP"), QString());
     QString deskSess = QProcessEnvironment::systemEnvironment().value(QStringLiteral("DESKTOP_SESSION"), QString());
+    QStringList deskInfoList;
     QString deskInfo;
 
-    if ( !(deskEnv.isEmpty() && deskSess.isEmpty()) ) {
-        if ( deskEnv.isEmpty() || deskSess.isEmpty() )
-            deskInfo = QLatin1String(" (") + deskEnv + deskSess + QLatin1String(")");
-        else
-            deskInfo = QLatin1String(" (") + deskEnv + QLatin1String("/") + deskSess + QLatin1String(")");
+    if (!deskEnv.isEmpty()) {
+        deskInfoList.append(deskEnv);
+    }
+    if (!deskSess.isEmpty()) {
+        deskInfoList.append(deskSess);
+    }
+    if (qGuiApp->platformName() != QLatin1String("windows") && qGuiApp->platformName() != QLatin1String("cocoa")) {
+        deskInfoList.append(qGuiApp->platformName());
+    }
+    if(!deskInfoList.isEmpty()) {
+        deskInfo = QLatin1String(" (") + deskInfoList.join(QLatin1String("/")) + QLatin1String(")");
     }
 
     str << "OS: " << prettyProductInfoWrapper() << deskInfo << '\n';
@@ -871,19 +878,43 @@ void AboutDialog::copyToClipboard()
 #endif
     QLocale loc;
     str << "Locale: " << QLocale::languageToString(loc.language()) << "/"
+#if QT_VERSION < QT_VERSION_CHECK(6,6,0)
         << QLocale::countryToString(loc.country())
+#else
+        << QLocale::territoryToString(loc.territory())
+#endif
         << " (" << loc.name() << ")";
     if (loc != QLocale::system()) {
         loc = QLocale::system();
         str << " [ OS: " << QLocale::languageToString(loc.language()) << "/"
+#if QT_VERSION < QT_VERSION_CHECK(6,6,0)
             << QLocale::countryToString(loc.country())
+#else
+            << QLocale::territoryToString(loc.territory())
+#endif
             << " (" << loc.name() << ") ]";
     }
     str << "\n";
 
+    // Add Stylesheet/Theme/Qtstyle information
     std::string styleSheet = App::GetApplication().GetParameterGroupByPath("User parameter:BaseApp/Preferences/MainWindow")->GetASCII("StyleSheet");
     std::string theme = App::GetApplication().GetParameterGroupByPath("User parameter:BaseApp/Preferences/MainWindow")->GetASCII("Theme");
-    std::string style = App::GetApplication().GetParameterGroupByPath("User parameter:BaseApp/Preferences/MainWindow")->GetASCII("QtStyle");
+
+    #if QT_VERSION >= QT_VERSION_CHECK(6, 1, 0)
+        std::string style = qApp->style()->name().toStdString();
+    #else
+        std::string style = App::GetApplication().GetParameterGroupByPath("User parameter:BaseApp/Preferences/MainWindow")->GetASCII("QtStyle");
+        if(style.empty()) {
+            style = "Qt default";
+        }
+    #endif
+
+    if(styleSheet.empty()) {
+        styleSheet = "unset";
+    }
+    if(theme.empty()) {
+        theme = "unset";
+    }
 
     str << "Stylesheet/Theme/QtStyle: "
         << QString::fromStdString(styleSheet) << "/"
