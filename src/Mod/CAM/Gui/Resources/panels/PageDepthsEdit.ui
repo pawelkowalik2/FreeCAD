@@ -113,7 +113,39 @@
      </property>
     </widget>
    </item>
-   <item row="2" column="0">
+   <item row="2" column="0" colspan="2">
+     <widget class="QLabel" name="entryDepthLabel">
+       <property name="minimumSize">
+         <size>
+           <width>0</width>
+           <height>34</height>
+         </size>
+       </property>
+       <property name="maximumSize">
+         <size>
+           <width>16777215</width>
+           <height>34</height>
+         </size>
+       </property>
+       <property name="text">
+         <string>Entry Step Down</string>
+       </property>
+     </widget>
+   </item>
+   <item row="2" column="2">
+     <widget class="Gui::QuantitySpinBox" name="entryDepth">
+       <property name="toolTip">
+         <string>Depth of the entry cut of the operation. Can be used to produce a cleaner top surface.</string>
+       </property>
+       <property name="minimum" stdset="0">
+         <double>-999999999.000000000000000</double>
+       </property>
+       <property name="maximum" stdset="0">
+         <double>999999999.000000000000000</double>
+       </property>
+     </widget>
+   </item>
+   <item row="3" column="0">
     <widget class="QLabel" name="stepDownLabel">
      <property name="minimumSize">
       <size>
@@ -132,7 +164,7 @@
      </property>
     </widget>
    </item>
-   <item row="2" column="2">
+   <item row="3" column="2">
     <widget class="Gui::QuantitySpinBox" name="stepDown">
      <property name="toolTip">
       <string>The depth in Z-axis the operation moves downwards between layers. This value depends on the tool being used, the material to be cut, available cooling and many other factors. Please consult the tool manufacturers data sheets for the proper value.</string>
@@ -145,37 +177,37 @@
      </property>
     </widget>
    </item>
-  <item row="3" column="0" colspan="2">
-    <widget class="QLabel" name="finishDepthLabel">
-     <property name="minimumSize">
-      <size>
-       <width>0</width>
-       <height>34</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>34</height>
-      </size>
-     </property>
-     <property name="text">
-      <string>Finish Step Down</string>
-     </property>
-    </widget>
+   <item row="4" column="0" colspan="2">
+     <widget class="QLabel" name="finishDepthLabel">
+       <property name="minimumSize">
+         <size>
+           <width>0</width>
+           <height>34</height>
+         </size>
+       </property>
+       <property name="maximumSize">
+         <size>
+           <width>16777215</width>
+           <height>34</height>
+         </size>
+       </property>
+       <property name="text">
+         <string>Finish Step Down</string>
+       </property>
+     </widget>
    </item>
-   <item row="3" column="2">
-    <widget class="Gui::QuantitySpinBox" name="finishDepth">
-     <property name="toolTip">
-      <string>Depth of the final cut of the operation. Can be used to produce a cleaner finish.</string>
-     </property>
-     <property name="minimum" stdset="0">
-      <double>-999999999.000000000000000</double>
-     </property>
-     <property name="maximum" stdset="0">
-      <double>999999999.000000000000000</double>
-     </property>
-    </widget>
+   <item row="4" column="2">
+     <widget class="Gui::QuantitySpinBox" name="finishDepth">
+       <property name="toolTip">
+         <string>Depth of the final cut of the operation. Can be used to produce a cleaner finish.</string>
+       </property>
+       <property name="minimum" stdset="0">
+         <double>-999999999.000000000000000</double>
+       </property>
+       <property name="maximum" stdset="0">
+         <double>999999999.000000000000000</double>
+       </property>
+     </widget>
    </item>
    <item row="7" column="1">
     <spacer name="verticalSpacer">
