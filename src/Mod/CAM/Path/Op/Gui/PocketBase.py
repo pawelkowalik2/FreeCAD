@@ -93,6 +93,9 @@ class TaskPanelOpPage(PathOpGui.TaskPanelPage):
         if not (FeatureRestMachining & self.pocketFeatures()):
             form.useRestMachining.hide()
 
+        if not (FeaturePocket & self.pocketFeatures()):
+            form.keepToolDown.hide()
+
         return form
 
     def updateMinTravel(self, obj, setModel=True):
@@ -128,6 +131,9 @@ class TaskPanelOpPage(PathOpGui.TaskPanelPage):
         if obj.UseRestMachining != self.form.useRestMachining.isChecked():
             obj.UseRestMachining = self.form.useRestMachining.isChecked()
 
+        if obj.KeepToolDown != self.form.keepToolDown.isChecked():
+            obj.KeepToolDown = self.form.keepToolDown.isChecked()
+
         if FeatureOutline & self.pocketFeatures():
             if obj.UseOutline != self.form.useOutline.isChecked():
                 obj.UseOutline = self.form.useOutline.isChecked()
@@ -151,6 +157,7 @@ class TaskPanelOpPage(PathOpGui.TaskPanelPage):
         )
         self.form.useStartPoint.setChecked(obj.UseStartPoint)
         self.form.useRestMachining.setChecked(obj.UseRestMachining)
+        self.form.keepToolDown.setChecked(obj.KeepToolDown)
         if FeatureOutline & self.pocketFeatures():
             self.form.useOutline.setChecked(obj.UseOutline)
 
@@ -183,6 +190,7 @@ class TaskPanelOpPage(PathOpGui.TaskPanelPage):
         signals.append(self.form.extraOffset.editingFinished)
         signals.append(self.form.useStartPoint.clicked)
         signals.append(self.form.useRestMachining.clicked)
+        signals.append(self.form.keepToolDown.clicked)
         signals.append(self.form.useOutline.clicked)
         signals.append(self.form.minTravel.clicked)
         signals.append(self.form.coolantController.currentIndexChanged)
