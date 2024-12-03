@@ -61,7 +61,7 @@ class TaskPanelOpPage(PathOpGui.TaskPanelPage):
         """getForm() ... returns UI customized according to profileFeatures()"""
         form = FreeCADGui.PySideUic.loadUi(":/panels/PageOpProfileFullEdit.ui")
 
-        comboToPropertyMap = [("cutSide", "Side"), ("direction", "Direction")]
+        comboToPropertyMap = [("cutSide", "Side"), ("direction", "Direction"), ("handleMultipleFeatures", "HandleMultipleFeatures")]
         enumTups = PathProfile.ObjectProfile.areaOpPropertyEnumerations(dataType="raw")
 
         self.populateCombobox(form, enumTups, comboToPropertyMap)
@@ -76,6 +76,8 @@ class TaskPanelOpPage(PathOpGui.TaskPanelPage):
             obj.Side = str(self.form.cutSide.currentData())
         if obj.Direction != str(self.form.direction.currentData()):
             obj.Direction = str(self.form.direction.currentData())
+        if obj.HandleMultipleFeatures != str(self.form.handleMultipleFeatures.currentData()):
+            obj.HandleMultipleFeatures = str(self.form.handleMultipleFeatures.currentData())
         PathGuiUtil.updateInputField(obj, "OffsetExtra", self.form.extraOffset)
 
         if obj.UseComp != self.form.useCompensation.isChecked():
@@ -97,6 +99,7 @@ class TaskPanelOpPage(PathOpGui.TaskPanelPage):
 
         self.selectInComboBox(obj.Side, self.form.cutSide)
         self.selectInComboBox(obj.Direction, self.form.direction)
+        self.selectInComboBox(obj.HandleMultipleFeatures, self.form.handleMultipleFeatures)
         self.form.extraOffset.setText(
             FreeCAD.Units.Quantity(obj.OffsetExtra.Value, FreeCAD.Units.Length).UserString
         )
@@ -116,6 +119,7 @@ class TaskPanelOpPage(PathOpGui.TaskPanelPage):
         signals.append(self.form.coolantController.currentIndexChanged)
         signals.append(self.form.cutSide.currentIndexChanged)
         signals.append(self.form.direction.currentIndexChanged)
+        signals.append(self.form.handleMultipleFeatures.currentIndexChanged)
         signals.append(self.form.extraOffset.editingFinished)
         signals.append(self.form.useCompensation.stateChanged)
         signals.append(self.form.useStartPoint.stateChanged)
