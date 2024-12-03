@@ -33,11 +33,12 @@ class depthTestCases(unittest.TestCase):
             "start_depth": 10,
             "step_down": 2,
             "z_finish_step": 1,
+            "z_entry_step": 1,
             "final_depth": 0,
             "user_depths": None,
         }
 
-        expected = [8, 6, 4, 2, 1, 0]
+        expected = [9, 8, 6, 4, 2, 1, 0]
 
         d = PathUtils.depth_params(**args)
         r = [i for i in d]
@@ -52,6 +53,7 @@ class depthTestCases(unittest.TestCase):
             "start_depth": 0,
             "step_down": 2,
             "z_finish_step": 0,
+            "z_entry_step": 0,
             "final_depth": -10,
             "user_depths": None,
         }
@@ -71,6 +73,7 @@ class depthTestCases(unittest.TestCase):
             "start_depth": 10,
             "step_down": 2,
             "z_finish_step": 0,
+            "z_entry_step": 0,
             "final_depth": 10,
             "user_depths": None,
         }
@@ -97,6 +100,7 @@ class depthTestCases(unittest.TestCase):
             "start_depth": 0,
             "step_down": 2,
             "z_finish_step": 0,
+            "z_entry_step": 0,
             "final_depth": -10,
             "user_depths": [2, 4, 8, 10, 11, 12],
         }
@@ -115,6 +119,7 @@ class depthTestCases(unittest.TestCase):
             "start_depth": 0,
             "step_down": 2,
             "z_finish_step": 1,
+            "z_entry_step": 0,
             "final_depth": -10,
             "user_depths": None,
         }
@@ -134,6 +139,7 @@ class depthTestCases(unittest.TestCase):
             "step_down": 3,
             "z_finish_step": 0,
             "final_depth": 0,
+            "z_entry_step": 0,
             "user_depths": None,
             "equalstep": True,
         }
@@ -145,18 +151,19 @@ class depthTestCases(unittest.TestCase):
         self.assertListEqual(r, expected)
 
     def test006(self):
-        """stepping down with equalstep=True and a finish depth"""
+        """stepping down with equalstep=True and a finish depth and entry depth"""
         args = {
             "clearance_height": 10,
             "safe_height": 5,
             "start_depth": 10,
             "step_down": 3,
             "z_finish_step": 1,
+            "z_entry_step": 1,
             "final_depth": 0,
             "user_depths": None,
         }
 
-        expected = [7.0, 4.0, 1.0, 0]
+        expected = [9.0, 7.0, 4.0, 1.0, 0]
 
         d = PathUtils.depth_params(**args)
         r = [i for i in d]
@@ -170,18 +177,19 @@ class depthTestCases(unittest.TestCase):
             "start_depth": 10,
             "step_down": 20,
             "z_finish_step": 1,
+            "z_entry_step": 1,
             "final_depth": 0,
             "user_depths": None,
         }
 
-        expected = [1.0, 0]
+        expected = [9.0, 1.0, 0]
 
         d = PathUtils.depth_params(**args)
         r = [i for i in d]
         self.assertListEqual(r, expected)
 
     def test008(self):
-        """Test handling of negative step-down, negative finish step, and relative size of step/finish"""
+        """Test handling of negative step-down, negative finish step, negative entry step, and relative size of step/finish"""
 
         # negative steps should be converted to positive values
         args = {
@@ -190,6 +198,7 @@ class depthTestCases(unittest.TestCase):
             "start_depth": 2,
             "step_down": -1,
             "z_finish_step": -1,
+            "z_entry_step": -1,
             "final_depth": 0,
             "user_depths": None,
         }
@@ -207,6 +216,20 @@ class depthTestCases(unittest.TestCase):
             "start_depth": 2,
             "step_down": 0.1,
             "z_finish_step": 1,
+            "z_entry_step": 0,
+            "final_depth": 0,
+            "user_depths": None,
+        }
+        self.assertRaises(ValueError, PathUtils.depth_params, **args)
+
+        # a step_down less than the entry step is an error
+        args = {
+            "clearance_height": 3,
+            "safe_height": 3,
+            "start_depth": 2,
+            "step_down": 0.1,
+            "z_finish_step": 0,
+            "z_entry_step": 1,
             "final_depth": 0,
             "user_depths": None,
         }
@@ -220,6 +243,7 @@ class depthTestCases(unittest.TestCase):
             "start_depth": 10.0,
             "step_down": 10.0,
             "z_finish_step": 0.0,
+            "z_entry_step": 0.0,
             "final_depth": 0.0,
             "user_depths": None,
         }
@@ -238,6 +262,7 @@ class depthTestCases(unittest.TestCase):
             "start_depth": 10.000000001,
             "step_down": 10.0,
             "z_finish_step": 0.0,
+            "z_entry_step": 0.0,
             "final_depth": 0.0,
             "user_depths": None,
         }
@@ -255,9 +280,29 @@ class depthTestCases(unittest.TestCase):
             "step_down": 9.9999999,
             "z_finish_step": 0.0,
             "final_depth": 0.0,
+            "z_entry_step": 0.0,
             "user_depths": None,
         }
 
         d = PathUtils.depth_params(**args)
         r = [i for i in d]
         self.assertListEqual(r, expected, "Expected {}, but result of {}".format(expected, r))
+
+    def test011(self):
+        """z_entry_step passed in."""
+        args = {
+            "clearance_height": 10,
+            "safe_height": 5,
+            "start_depth": 0,
+            "step_down": 2,
+            "z_finish_step": 0,
+            "z_entry_step": 1,
+            "final_depth": -10,
+            "user_depths": None,
+        }
+
+        expected = [-1, -2, -4, -6, -8, -10]
+
+        d = PathUtils.depth_params(**args)
+        r = [i for i in d]
+        self.assertListEqual(r, expected)
