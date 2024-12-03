@@ -570,7 +570,7 @@ class depth_params(object):
         final_depth:        Lowest point of the cutting operation
         user_depths:        List of specified depths
         equalstep:          Boolean.  If True, steps down except Z_finish_depth and z_entry_depth will be balanced.
-        z_entry_depth       Maximum amount of material to remove on the first pass
+        z_entry_depth:       Maximum amount of material to remove on the first pass
     """
 
     def __init__(
@@ -597,7 +597,6 @@ class depth_params(object):
         self.__user_depths = user_depths
         self.data = self.__get_depths(equalstep=equalstep)
         self.index = 0
-        
 
         if self.__z_finish_step > self.__step_down:
             raise ValueError("z_finish_step must be less than step_down")
