@@ -63,6 +63,7 @@ FeatureBasePanels = 0x0800  # Base
 FeatureLocations = 0x1000  # Locations
 FeatureCoolant = 0x2000  # Coolant
 FeatureDiameters = 0x4000  # Turning Diameters
+FeatureEntryDepth = 0x8000 # EntryDepth
 
 FeatureBaseGeometry = FeatureBaseVertexes | FeatureBaseFaces | FeatureBaseEdges
 
@@ -265,6 +266,14 @@ class ObjectOp(object):
                 "FinishDepth",
                 "Depth",
                 QT_TRANSLATE_NOOP("App::Property", "Maximum material removed on final pass."),
+            )
+
+        if FeatureEntryDepth & features:
+            obj.addProperty(
+                "App::PropertyDistance",
+                "EntryDepth",
+                "Depth",
+                QT_TRANSLATE_NOOP("App::Property", "Maximum material removed on first pass."),
             )
 
         if FeatureHeights & features:
@@ -474,6 +483,7 @@ class ObjectOp(object):
             | FeatureBaseGeometry
             | FeatureFinishDepth
             | FeatureCoolant
+            | FeatureEntryDepth
         )
 
     def initOperation(self, obj):

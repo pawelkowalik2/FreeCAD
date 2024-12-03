@@ -831,6 +831,7 @@ class TaskPanelDepthsPage(TaskPanelPage):
         # members initialized later
         self.startDepth = None
         self.finalDepth = None
+        self.entryDepth = None
         self.finishDepth = None
         self.stepDown = None
         self.panelTitle = "Depths"
@@ -850,6 +851,9 @@ class TaskPanelDepthsPage(TaskPanelPage):
 
     def haveFinishDepth(self):
         return PathOp.FeatureDepths & self.features and PathOp.FeatureFinishDepth & self.features
+
+    def haveEntryDepth(self):
+        return PathOp.FeatureDepths & self.features and PathOp.FeatureEntryDepth & self.features
 
     def haveStepDown(self):
         return PathOp.FeatureStepDown & self.features
@@ -893,6 +897,14 @@ class TaskPanelDepthsPage(TaskPanelPage):
             self.form.finishDepth.hide()
             self.form.finishDepthLabel.hide()
 
+        if self.haveEntryDepth():
+            self.entryDepth = PathGuiUtil.QuantitySpinBox(
+                self.form.entryDepth, obj, "EntryDepth"
+            )
+        else:
+            self.form.entryDepth.hide()
+            self.form.entryDepthLabel.hide()
+
     def getTitle(self, obj):
         return translate("PathOp", "Depths")
 
@@ -905,6 +917,8 @@ class TaskPanelDepthsPage(TaskPanelPage):
             self.stepDown.updateProperty()
         if self.haveFinishDepth():
             self.finishDepth.updateProperty()
+        if self.haveEntryDepth():
+            self.entryDepth.updateProperty()
 
     def setFields(self, obj):
         if self.haveStartDepth():
@@ -915,6 +929,8 @@ class TaskPanelDepthsPage(TaskPanelPage):
             self.stepDown.updateSpinBox()
         if self.haveFinishDepth():
             self.finishDepth.updateSpinBox()
+        if self.haveEntryDepth():
+            self.entryDepth.updateSpinBox()
         self.updateSelection(obj, FreeCADGui.Selection.getSelectionEx())
 
     def getSignalsForUpdate(self, obj):
@@ -927,6 +943,8 @@ class TaskPanelDepthsPage(TaskPanelPage):
             signals.append(self.form.stepDown.editingFinished)
         if self.haveFinishDepth():
             signals.append(self.form.finishDepth.editingFinished)
+        if self.haveEntryDepth():
+            signals.append(self.form.entryDepth.editingFinished)
         return signals
 
     def registerSignalHandlers(self, obj):
@@ -940,7 +958,7 @@ class TaskPanelDepthsPage(TaskPanelPage):
             )
 
     def pageUpdateData(self, obj, prop):
-        if prop in ["StartDepth", "FinalDepth", "StepDown", "FinishDepth"]:
+        if prop in ["StartDepth", "FinalDepth", "StepDown", "FinishDepth", "EntryDepth"]:
             self.setFields(obj)
 
     def depthSet(self, obj, spinbox, prop):
@@ -1040,6 +1058,7 @@ class TaskPanel(object):
         self.safeHeight = None
         self.startDepth = None
         self.finishDepth = None
+        self.entryDepth = None
         self.finalDepth = None
         self.stepDown = None
         self.buttonBox = None

@@ -90,7 +90,7 @@ class ObjectPocket(PathAreaOp.ObjectOp):
 
     def areaOpFeatures(self, obj):
         """areaOpFeatures(obj) ... Pockets have a FinishDepth and work on Faces"""
-        return PathOp.FeatureBaseFaces | PathOp.FeatureFinishDepth | self.pocketOpFeatures(obj)
+        return PathOp.FeatureBaseFaces | PathOp.FeatureFinishDepth | PathOp.FeatureEntryDepth | self.pocketOpFeatures(obj)
 
     def pocketOpFeatures(self, obj):
         return 0
