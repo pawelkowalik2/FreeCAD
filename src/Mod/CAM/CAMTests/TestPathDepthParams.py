@@ -279,8 +279,8 @@ class depthTestCases(unittest.TestCase):
             "start_depth": 10.0,
             "step_down": 9.9999999,
             "z_finish_step": 0.0,
-            "final_depth": 0.0,
             "z_entry_step": 0.0,
+            "final_depth": 0.0,
             "user_depths": None,
         }
 

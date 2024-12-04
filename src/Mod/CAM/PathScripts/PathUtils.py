@@ -558,7 +558,7 @@ def drillTipLength(tool):
 
 class depth_params(object):
     """calculates the intermediate depth values for various operations given the starting, ending, and stepdown parameters
-    (self, clearance_height, safe_height, start_depth, step_down, z_finish_depth, final_depth, [user_depths=None], equalstep=False)
+    (self, clearance_height, safe_height, start_depth, step_down, z_finish_depth, z_entry_depth, final_depth, [user_depths=None], equalstep=False)
 
         Note: if user_depths are supplied, only user_depths will be used.
 
@@ -567,10 +567,10 @@ class depth_params(object):
         start_depth:        Top of Model
         step_down:          Distance to step down between passes (always positive)
         z_finish_step:      Maximum amount of material to remove on the final pass
+        z_entry_step:       Maximum amount of material to remove on the first pass
         final_depth:        Lowest point of the cutting operation
         user_depths:        List of specified depths
         equalstep:          Boolean.  If True, steps down except Z_finish_depth and z_entry_depth will be balanced.
-        z_entry_depth:       Maximum amount of material to remove on the first pass
     """
 
     def __init__(

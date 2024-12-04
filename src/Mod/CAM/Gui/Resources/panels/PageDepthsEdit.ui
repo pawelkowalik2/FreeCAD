@@ -178,36 +178,36 @@
     </widget>
    </item>
    <item row="4" column="0" colspan="2">
-     <widget class="QLabel" name="finishDepthLabel">
-       <property name="minimumSize">
-         <size>
-           <width>0</width>
-           <height>34</height>
-         </size>
-       </property>
-       <property name="maximumSize">
-         <size>
-           <width>16777215</width>
-           <height>34</height>
-         </size>
-       </property>
-       <property name="text">
-         <string>Finish Step Down</string>
-       </property>
-     </widget>
+    <widget class="QLabel" name="finishDepthLabel">
+      <property name="minimumSize">
+        <size>
+          <width>0</width>
+          <height>34</height>
+        </size>
+      </property>
+      <property name="maximumSize">
+        <size>
+          <width>16777215</width>
+          <height>34</height>
+        </size>
+      </property>
+      <property name="text">
+        <string>Finish Step Down</string>
+      </property>
+    </widget>
    </item>
    <item row="4" column="2">
-     <widget class="Gui::QuantitySpinBox" name="finishDepth">
-       <property name="toolTip">
-         <string>Depth of the final cut of the operation. Can be used to produce a cleaner finish.</string>
-       </property>
-       <property name="minimum" stdset="0">
-         <double>-999999999.000000000000000</double>
-       </property>
-       <property name="maximum" stdset="0">
-         <double>999999999.000000000000000</double>
-       </property>
-     </widget>
+    <widget class="Gui::QuantitySpinBox" name="finishDepth">
+      <property name="toolTip">
+        <string>Depth of the final cut of the operation. Can be used to produce a cleaner finish.</string>
+      </property>
+      <property name="minimum" stdset="0">
+        <double>-999999999.000000000000000</double>
+      </property>
+      <property name="maximum" stdset="0">
+        <double>999999999.000000000000000</double>
+      </property>
+    </widget>
    </item>
    <item row="7" column="1">
     <spacer name="verticalSpacer">
