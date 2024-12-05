@@ -268,6 +268,14 @@ class ObjectOp(object):
                 QT_TRANSLATE_NOOP("App::Property", "Maximum material removed on final pass."),
             )
 
+        if FeatureEntryDepth & features:
+            obj.addProperty(
+                "App::PropertyDistance",
+                "EntryDepth",
+                "Depth",
+                QT_TRANSLATE_NOOP("App::Property", "Maximum material removed on first pass."),
+            )
+
         if FeatureHeights & features:
             obj.addProperty(
                 "App::PropertyDistance",
