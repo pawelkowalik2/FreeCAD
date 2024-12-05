@@ -579,6 +579,7 @@ class depth_params(object):
         start_depth,
         step_down,
         z_finish_step,
+        z_entry_step,
         final_depth,
         user_depths=None,
         equalstep=False,
