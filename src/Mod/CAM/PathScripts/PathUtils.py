@@ -591,6 +591,7 @@ class depth_params(object):
         self.__start_depth = start_depth
         self.__step_down = math.fabs(step_down)
         self.__z_finish_step = math.fabs(z_finish_step)
+        self.__z_entry_step = math.fabs(z_entry_step)
         self.__final_depth = final_depth
         self.__user_depths = user_depths
         self.data = self.__get_depths(equalstep=equalstep)
@@ -598,6 +599,9 @@ class depth_params(object):
 
         if self.__z_finish_step > self.__step_down:
             raise ValueError("z_finish_step must be less than step_down")
+        
+        if self.__z_entry_step > self.__step_down:
+            raise ValueError("z_entry_step must be less than step_down")
 
     def __iter__(self):
         self.index = 0
@@ -652,6 +656,14 @@ class depth_params(object):
         final pass will remove exactly this amount.
         """
         return self.__z_finish_step
+    
+    @property
+    def z_entry_depth(self):
+        """
+        The amount of material to remove on the first pass.  If given, the
+        entry pass will remove exactly this amount.
+        """
+        return self.__z_entry_step
 
     @property
     def final_depth(self):
@@ -695,6 +707,13 @@ class depth_params(object):
             depths += self.__equal_steps(self.__start_depth, depths[-1], self.__step_down)[1:]
         else:
             depths += self.__fixed_steps(self.__start_depth, depths[-1], self.__step_down)[1:]
+
+        # apply entry step if necessary
+        if self.__z_entry_step > 0:
+            if self.__z_entry_step < total_depth:
+                depths.append(self.__start_depth - self.__z_entry_step)
+            else:
+                return depths
 
         depths.reverse()
 
