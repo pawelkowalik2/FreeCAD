@@ -491,12 +491,14 @@ class ObjectOp(PathOp.ObjectOp):
     # Support methods
     def _customDepthParams(self, obj, strDep, finDep):
         finish_step = obj.FinishDepth.Value if hasattr(obj, "FinishDepth") else 0.0
+        entry_step = obj.EntryDepth.Value if hasattr(obj, "EntryDepth") else 0.0
         return PathUtils.depth_params(
             clearance_height=obj.ClearanceHeight.Value,
             safe_height=obj.SafeHeight.Value,
             start_depth=strDep,
             step_down=obj.StepDown.Value,
             z_finish_step=finish_step,
+            z_entry_step=entry_step,
             final_depth=finDep,
             user_depths=None,
         )
