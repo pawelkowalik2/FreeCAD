@@ -483,6 +483,7 @@ class ObjectOp(object):
             | FeatureBaseGeometry
             | FeatureFinishDepth
             | FeatureCoolant
+            | FeatureEntryDepth
         )
 
     def initOperation(self, obj):
